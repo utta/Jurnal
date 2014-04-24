@@ -15,10 +15,8 @@ public class nomor1{
 		nomor1 n=new nomor1();
 		
 		int input=7;
-		int jum=0;
-		for(int i=1;i<=input;i++){
-			jum+=n.fibo(i);
+		for(int i=input;i>=1;i--){
+			System.out.print(n.fibo(i)+" ");
 		}
-			System.out.print(jum);
 	}
 }
