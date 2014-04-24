@@ -1,0 +1,22 @@
+public class nomor1{
+	public int fibo (int i){
+		if (i==0){
+			return 0;
+		}
+		else if (i==1){
+			return 1;
+		}
+		else{
+			return fibo(i-1)+fibo(i-2);
+		}
+	}
+	
+	public static void main (String[] args){
+		nomor1 n=new nomor1();
+		
+		int input=7;
+		for(int i=1;i<=input;i++){
+			System.out.print(n.fibo(i)+" ");
+		}
+	}
+}
